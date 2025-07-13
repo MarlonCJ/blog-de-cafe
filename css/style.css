@@ -1,0 +1,162 @@
+:root{
+    --fuente: "Montserrat", sans-serif;;
+    --primario: #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+    font-family: var(--fuente);
+}
+
+/* globales */
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+
+/* tipografias */
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+
+/* Utilidades */
+
+
+.button{
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 1.4rem 1.6rem;
+}
+
+
+/* header */
+
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 60rem;
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+}
+
+.header__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem ;
+}
+
+@media(min-width: 768px){
+        
+    .header__menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 0;
+    }
+}
+
+.menu-logo__link{
+    color: var(--blanco);
+    font-size: 4rem;
+}
+
+.menu-logo__link span{
+    font-weight: 600;
+
+}
+
+.menu-nav{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+
+.menu-nav__link{
+    color: var(--blanco);
+    padding: 0 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+@media(min-width: 768px){   
+    .menu-nav{
+        flex-direction: row;
+    }
+}
+
+
+.header__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding-top: 6rem;
+}
+
+@media(min-width: 768px){
+    
+    .header__content{
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50% , -50%);
+       padding-top: 0;
+    }
+}
+
+
+.header__title{
+    font-size: 3.4rem;
+    margin: 0;
+    color: var(--blanco);
+    text-align: center;
+}
+
+.header__text{
+    text-align: center;
+    color:var(--blanco);
+    margin: 0;
+}

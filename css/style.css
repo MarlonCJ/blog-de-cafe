@@ -35,6 +35,12 @@ p{
     font-size: 1.6rem;
 }
 
+hr{
+    border: none;
+    height: 1.5px;
+    background-color: var(--primario);
+    margin: 2rem 0;
+}
 
 /* tipografias */
 
@@ -227,7 +233,6 @@ h3{
 
 .blog__sidebar{
     grid-area: aside;
-    background-color: var(--gris);
     padding: 2rem;
     border-radius: 1rem;
 }
@@ -244,16 +249,22 @@ h3{
 
 }
 
-.sidebar-itme__text{
-
+.sidebar-item__text{
+    font-weight: bold;
 }
 
-.sidebar-item__info{
-
+.sidebar-item__text span{
+    font-weight: normal;
 }
 
 .sidebar-item__link{
-
+    display: inline-block;
+    background-color: var(--primario);
+    text-align: center;
+    width: 100%;
+    color: var(--blanco);
+    padding: 10px 20px;
+    font-size: 2rem;
 }
 
 @media(min-width: 768px){
@@ -264,4 +275,11 @@ h3{
             "main aside";
         column-gap: 2rem;
     }
+}
+
+
+/* footer */
+
+.footer{
+    background-color: var(--negro);
 }

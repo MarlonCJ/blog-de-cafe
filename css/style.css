@@ -209,20 +209,8 @@ h3{
     padding: 2rem;
 }
 
-.blog__content-title{
-
-}
-
 .entrada{
    margin-bottom: 3rem;
-}
-
-.entrada__photo{
-
-}
-
-.entrada__imagen-link{
-
 }
 
 .entrada__imagen{
@@ -230,27 +218,11 @@ h3{
     border-radius: 2rem;
 }
 
-.entrada__title{
-
-}
-
 
 .blog__sidebar{
     grid-area: aside;
     padding: 2rem;
     border-radius: 1rem;
-}
-
-.blog__sidebar-title{
-
-}
-
-.sidebar-item{
-
-}
-
-.sidebar-item__title{
-
 }
 
 .sidebar-item__text{
@@ -307,6 +279,40 @@ h3{
         flex-basis: calc(50% - 1rem);
     }
 }
+
+/* cursos */
+
+.curso{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.curso__imagen img{
+    width: 100%;
+}
+
+.curso__dato{
+    font-weight: bold;
+}
+
+.curso__dato span{
+    font-weight: normal;
+}
+
+
+@media(min-width: 768px){
+    .curso{
+        grid-template-columns: 1fr 2fr;
+    }   
+}
+
+
+
+
+
 /* footer */
 
 .footer{

@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <title>Blog de Cafe</title>
+    
+    <!-- prefetch -->
+
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!--Preload-->
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" crossorigin="crossorigin"  as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <link rel="preload" href="css//style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link rel="stylesheet" href="">
+    
 </head>
 <body>
     <!-- HERO -->
@@ -36,7 +50,7 @@
             <article class="entrada">
                 <div class="entrada__photo">
                     <a class="entrada__imagen-link" href="">
-                        <img class="entrada__imagen" src="img/blog1.jpg" alt="blog 1">
+                        <img loading="lazy" class="entrada__imagen" src="img/blog1.webp" alt="blog 1">
                     </a>
                 </div>
                 <h3 class="entrada__title">Tipos de Grano Café</h3>
@@ -47,7 +61,7 @@
             <article class="entrada">
                 <div class="entrada__photo">
                     <a class="entrada__imagen-link" href="">
-                        <img class="entrada__imagen" src="img/blog2.jpg" alt="blog 2">
+                        <img  loading="lazy" class="entrada__imagen" src="img/blog2.webp" alt="blog 2">
                     </a>
                 </div>
                 <h3 class="entrada__title">3 Deliciosas Recetas de Café</h3>
@@ -58,7 +72,7 @@
             <article class="entrada">
                 <div class="entrada__photo">
                     <a class="entrada__imagen-link" href="">
-                        <img class="entrada__imagen" src="img/blog3.jpg" alt="blog 3">
+                        <img loading="lazy" class="entrada__imagen" src="img/blog3.webp" alt="blog 3">
                     </a>
                 </div>
                 <h3 class="entrada__title">Beneficios del Café</h3>
@@ -98,5 +112,6 @@
                 </nav>
              </div>
         </footer>
+    <script src="js/modernizr-custom.js"></script>
 </body>
 </html>
